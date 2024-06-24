@@ -1,0 +1,36 @@
+import = [
+  # uncomment the flavour you want below:
+  #"~/.config/alacritty/catppuccin-latte.toml"
+  # "~/.config/alacritty/catppuccin-frappe.toml"
+  # "~/.config/alacritty/catppuccin-macchiato.toml"
+  "~/.config/alacritty/catppuccin-mocha.toml"
+]
+
+[shell]
+args = ['--login']
+program = "/usr/bin/zsh"
+
+
+[cursor]
+
+
+[font]
+size = 15.0
+
+[font.normal]
+family= "JetBrainsMonoNerdFont"
+style= "regular"
+
+[window]
+startup_mode = "Windowed"
+dynamic_padding = true
+opacity = 0.85
+
+[window.padding]
+x = 6
+y = 0
+
+
+[colors.cursor]
+text = "CellBackground"
+cursor = "CellForeground"
