@@ -199,6 +199,8 @@ bindsym $mod+Ctrl+v exec rofi -modi "clipboard:greenclip print" -show clipboard 
 bindsym $mod+Ctrl+l exec betterlockscreen -l blur
 # auto startapps  
 exec --no-startup-id /opt/nekoray/nekoray
+# For warning low battery 
+exec --no-startup-id i3-battery-popup -D -L 20 -l 10
 # volume manager 
 exec --no-startup-id volctl 
 # touchpad configs start
