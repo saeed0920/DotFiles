@@ -73,6 +73,8 @@ ZSH_THEME="robbyrussell"
 plugins=(git sudo zsh-autosuggestions zsh-syntax-highlighting history)
 
 source $ZSH/oh-my-zsh.sh
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
 
 # User configuration
 
@@ -100,7 +102,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ssh='TERM=xterm-256color ssh'
-
+alias cat='bat -p'
 
 
 

@@ -199,7 +199,7 @@ bindsym $mod+Ctrl+v exec rofi -modi "clipboard:greenclip print" -show clipboard 
 # lock screen
 bindsym $mod+Ctrl+l exec betterlockscreen -l blur
 # auto startapps  
-exec --no-startup-id /opt/nekoray/nekoray
+# exec --no-startup-id /opt/nekoray/nekoray
 # For warning low battery 
 exec --no-startup-id i3-battery-popup -D -L 20 -l 10
 # volume manager 
@@ -212,5 +212,6 @@ exec_always --no-startup-id feh --bg-center ~/.config/i3/bg.jpg
 exec_always  picom --no-fading-openclose 
 # keyboard change layout
 exec_always "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:alt_shift_toggle"
-
+# Auto start Apps(Hiddify)
+exec_always --no-startup-id hiddify
 
