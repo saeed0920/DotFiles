@@ -103,6 +103,7 @@ source /usr/share/fzf/completion.zsh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias ssh='TERM=xterm-256color ssh'
 alias cat='bat -p'
+alias fzf_preview="fzf --preview 'bat --color=always {}' --bind 'ctrl-d:preview:file {}' --bind 'ctrl-f:preview:bat --color=always {}'"
 
 
 
