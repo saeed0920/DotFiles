@@ -1,81 +1,73 @@
-# i3status configuration file.
-# see "man i3status" for documentation.
-
-# It is important that this file is edited as UTF-8.
-# The following line should contain a sharp s:
-# ß
-# If the above line is not correctly displayed, fix your editor first!
-
-general {
-        colors = true
-        interval = 5
-        color_good = "#81a1c1" # Light green
-        color_degraded = "#fafe7c" # Light yellow
-        color_bad = "#ff7770" # Light red
+general{
+  interval = 1
 }
 
-# order += "ipv6"
-order += "volume master"
+order += "disk /home"
+order += "disk /"
 order += "wireless _first_"
-# order += "ethernet _first_"
-# order += "battery all"
-order += "battery 0"
-# order += "disk /"
-# order += "load"
-# order += "memory"
+order += "battery 1"
+order += "cpu_temperature 0"
+order += "memory"
+order += "load"
+order += "volume master"
 order += "tztime local"
 
-# wireless _first_ {
-#         format_up = "(%quality at %essid)"
-#         format_down = "down"
-# }
-
 wireless _first_ {
-        format_up = " %essid  "
-        format_down = " Down  "
+        format_up = "W: (%quality at %essid, %bitrate) %ip"
+        format_down = "W: down"
+}
+ethernet _first_ {
+  format_up = "Ethernet: (%quality at %essid, %bitrate) %ip"
+          format_down = ""
 }
 
 volume master {
-        format = " %volume  "
-        format_muted = " %volume  "
+        format = "♪: %volume"
+        format_muted = "♪: muted (%volume)"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
 }
-
-ethernet _first_ {
-        format_up = "E: %ip (%speed)"
-        format_down = "E: down"
-}
-
-# battery all {
-#         format = "%status %percentage"
-# }
-
-battery 0 {
-        format = "%status %percentage"
-        hide_seconds = true
-        integer_battery_capacity = true
-        last_full_capacity = true
-        status_chr = " +"
-        status_bat = ""
-        status_full = ""
-}
-
-disk "/" {
-        format = "%avail"
-}
-
-load {
-        format = "CPU: %1min"
-}
-
-memory {
-        format = "  Mem %used"
-        threshold_degraded = "1G"
-        format_degraded = "MEMORY < %available"
+battery 1 {
+        format = "%status %percentage %remaining %emptytime"
+        format_down = "No battery"
+        status_chr = "⚡️ CHR"
+        status_bat = "🔋 BAT"
+        status_unk = "? UNK"
+        status_full = "☻ FULL"
+        path = "/sys/class/power_supply/BAT%d/uevent"
+        low_threshold = 20
 }
 
 tztime local {
-        format = "   %a %d-%m-%Y    %H:%M  "
+        format = "%Y-%m-%d %H:%M:%S"
+        hide_if_equals_localtime = false
 }
+
+load {
+        format = "%5min"
+}
+
+cpu_temperature 0 {
+        format = "T: %degrees °C"
+        path = "/sys/devices/platform/coretemp.0/hwmon/hwmon*/temp1_input"
+}
+
+memory {
+        format = "%used"
+        threshold_degraded = "10%"
+        format_degraded = "MEMORY: %free"
+}
+
+disk "/home" {
+        format = "🗄 %free"
+}
+
+disk "/" {
+        format = "🧰 %free"
+}
+
+read_file uptime {
+        path = "/proc/uptime"
+}
+

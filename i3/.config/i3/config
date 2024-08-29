@@ -188,7 +188,8 @@ bindsym $mod+r mode "resize"
 # finds out, if available)
 bar {
  	i3bar_command i3bar -t
-        status_command i3status
+        status_command i3status 
+	  font pango:JetBrainsMono Nerd Font 8
 	colors {
 	background #34495e8C 
 	}
@@ -213,5 +214,5 @@ exec_always  picom --no-fading-openclose
 # keyboard change layout
 exec_always "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:alt_shift_toggle"
 # Auto start Apps(Hiddify)
-exec_always --no-startup-id hiddify
+exec --no-startup-id hiddify
 
