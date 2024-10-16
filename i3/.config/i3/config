@@ -214,5 +214,6 @@ exec_always  picom --no-fading-openclose
 # keyboard change layout
 exec_always "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:alt_shift_toggle"
 # Auto start Apps(Hiddify)
-exec --no-startup-id hiddify
-
+# exec --no-startup-id hiddify
+# test
+# exec gsettings set org.gnome.desktop.interface color-scheme "prefer-dark" 
