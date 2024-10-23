@@ -11,3 +11,4 @@ PS1='[\u@\h \W]\$ '
 
 PATH=~/.console-ninja/.bin:$PATH
 alias ssh="term=xterm-256color $(which ssh)"
+. "/home/saeed0920/.deno/env"
