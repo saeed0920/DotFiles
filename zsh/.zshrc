@@ -116,3 +116,11 @@ export NVM_DIR="$HOME/.nvm"
 export PATH="$HOME/.local/bin:$PATH"
 
 . "/home/saeed0920/.deno/env"
+
+# pnpm
+export PNPM_HOME="/home/saeed0920/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
