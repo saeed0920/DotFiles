@@ -11,7 +11,7 @@ program = "/usr/bin/zsh"
 size = 15.0
 
 [font.normal]
-family= "JetBrainsMonoNerdFont"
+#family= "JetBrainsMonoNerdFont"
 style= "regular"
 
 [window]
