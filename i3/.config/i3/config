@@ -207,7 +207,7 @@ exec --no-startup-id volctl
 # touchpad configs start
 exec_always --no-startup-id libinput-gestures-setup autostart start
 # wallpaper
-exec_always --no-startup-id feh --bg-center ~/.config/i3/bg.jpg
+exec_always --no-startup-id feh --bg-fill ~/.config/i3/bg.*
 # picom 
 exec_always  picom --no-fading-openclose 
 # keyboard change layout
@@ -219,5 +219,11 @@ exec_always "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:alt_sh
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
+# Config the  notfiy-me 
+exec --no-startup-id dunst 
 
+
+# Config the brightness
+bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
+bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
