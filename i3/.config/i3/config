@@ -197,7 +197,7 @@ bar {
 exec_always --no-startup-id greenclip daemon
 bindsym $mod+Ctrl+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 # lock screen
-bindsym $mod+Ctrl+l exec betterlockscreen -l blur
+bindsym $mod+Ctrl+l exec bash ~/DotFiles/i3/.config/i3/lock.sh
 # auto startapps  
 # exec --no-startup-id /opt/nekoray/nekoray
 # For warning low battery 
@@ -214,7 +214,6 @@ exec_always  picom --no-fading-openclose
 exec_always "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:alt_shift_toggle"
 # Auto start Apps(Hiddify)
 # exec --no-startup-id hiddify
-# test
 # exec gsettings set org.gnome.desktop.interface color-scheme "prefer-dark" 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -227,3 +226,6 @@ exec --no-startup-id dunst
 bindsym XF86MonBrightnessUp exec --no-startup-id brightnessctl set +5%
 bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
+# This is for keywall in kde 
+exec --no-startup-id kwalletd5
+exec --no-startup-id kwalletd6
