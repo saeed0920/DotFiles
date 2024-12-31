@@ -201,7 +201,7 @@ bindsym $mod+Ctrl+l exec bash ~/DotFiles/i3/.config/i3/lock.sh
 # auto startapps  
 # exec --no-startup-id /opt/nekoray/nekoray
 # For warning low battery 
-exec --no-startup-id i3-battery-popup -D -L 20 -l 10
+exec --no-startup-id i3-battery-popup -n -D -L 20 -l 10
 # volume manager 
 exec --no-startup-id volctl 
 # touchpad configs start
