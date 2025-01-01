@@ -21,7 +21,7 @@ vim.opt.lazyredraw = true
 lvim.format_on_save = false
 lvim.builtin.alpha.active = false
 lvim.builtin.project.active = false
-lvim.builtin.nvimtree.show_icons.git = 0
+-- lvim.builtin.nvimtree.show_icons.git = 0
 lvim.builtin.telescope.defaults.prompt_prefix = " "
 lvim.builtin.telescope.defaults.path_display.shorten = nil
 lvim.builtin.telescope.pickers = {
@@ -35,7 +35,6 @@ lvim.builtin.treesitter.ensure_installed = {
   "css",
   "javascript",
   "typescript",
-  "typescriptreact",
   "json",
   "lua",
   "python",
