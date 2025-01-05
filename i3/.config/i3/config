@@ -183,16 +183,32 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+bar {
+    #font pango:DejaVu Sans Mono, FontAwesome 9
+	  font pango:JetBrainsMono Nerd Font 9 
+    position bottom
+    status_command i3status-rs ~/.config/i3/i3status/config.toml
+    colors {
+        separator #666666
+	      background #34495e8C 
+        statusline #dddddd
+        focused_workspace #0088CC #0088CC #ffffff
+        active_workspace #333333 #333333 #ffffff
+        inactive_workspace #333333 #333333 #888888
+        urgent_workspace #2f343a #900000 #ffffff
+    }
+}
+
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
- 	i3bar_command i3bar -t
-        status_command i3status 
-	  font pango:JetBrainsMono Nerd Font 8
-	colors {
-	background #34495e8C 
-	}
-}
+#bar {
+ 	#i3bar_command i3bar -t
+        #status_command i3status 
+	  #font pango:JetBrainsMono Nerd Font 8
+	#colors {
+	#background #34495e8C 
+	#}
+#}
 # Clipboard 
 exec_always --no-startup-id greenclip daemon
 bindsym $mod+Ctrl+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
@@ -229,3 +245,12 @@ bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 # This is for keywall in kde 
 exec --no-startup-id kwalletd5
 exec --no-startup-id kwalletd6
+
+# Default Workspaces
+exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/google-chrome-stable'
+exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/alacritty'
+exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram'
+exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/hiddify'
+
+
+#client.focused #000000 #555555 #ffffff #000000
