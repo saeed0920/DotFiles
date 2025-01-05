@@ -104,7 +104,7 @@ source /usr/share/fzf/completion.zsh
 alias ssh='TERM=xterm-256color ssh'
 alias cat='bat -p'
 alias fzf_preview="fzf --preview 'bat --color=always {}' --bind 'ctrl-d:preview:file {}' --bind 'ctrl-f:preview:bat --color=always {}'"
-
+alias discord="discord --proxy-server=socks5://127.0.0.1:12334"
 
 
 #PATH=~/.console-ninja/.bin:$PATH
