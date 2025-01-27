@@ -246,7 +246,7 @@ exec_always "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:alt_sh
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 # Config the  notfiy-me 
-exec --no-startup-id dunst 
+exec --no-startup-id dunst --startup_notification
 
 
 # Config the brightness
