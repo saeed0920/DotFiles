@@ -230,7 +230,7 @@ bindsym $mod+Ctrl+l exec bash ~/DotFiles/i3/.config/i3/lock.sh
 # For warning low battery 
 exec --no-startup-id i3-battery-popup -n -D -L 20 -l 10
 # volume manager 
-exec --no-startup-id volctl 
+#exec --no-startup-id volctl 
 # touchpad configs start
 exec_always --no-startup-id libinput-gestures-setup autostart start
 # wallpaper
