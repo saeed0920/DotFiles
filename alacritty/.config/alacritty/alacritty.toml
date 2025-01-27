@@ -11,8 +11,8 @@ program = "/usr/bin/zsh"
 size = 15.0
 
 [font.normal]
-#family= "JetBrainsMonoNerdFont"
-style= "regular"
+#family= "Vazirmatn FD"
+#style= "regular"
 
 [window]
 startup_mode = "Windowed"
