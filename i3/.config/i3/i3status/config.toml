@@ -7,6 +7,14 @@ separator_fg = "#aaaaaa"
 [icons]
 
 [[block]]
+block = "custom"
+command = "xkb-switch"
+interval = 1 
+[[block.click]]
+button = "left"
+cmd = "xkb-switch -n"
+
+[[block]]
 block = "time"
 interval = 5
 format = " $timestamp.datetime(f:'%a %d/%m/%Y %R') "
@@ -49,4 +57,8 @@ button = "left"
 cmd = "pavucontrol"
 
 [[block]]
-block = "battery"
+block = "custom"
+command = "~/DotFiles/i3/.config/i3/i3status/battery.sh"
+interval = 10
+
+
