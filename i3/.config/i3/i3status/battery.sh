@@ -9,7 +9,7 @@ time=$(echo "$battery_info" | grep -E "(time to empty|time to full)" | awk '{pri
 # Set icon based on the battery state
 if [[ "$state" = "charging" ]]; then
     icon="⚡"
-elif [[ "$percentage" -le "20%" ]]; then
+  elif [[ ${percentage%\%} -le 20 ]]; then
     icon="🔴"
 else
     icon="🔋"
