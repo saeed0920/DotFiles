@@ -40,6 +40,11 @@ alert = 10.0
 format = " $icon root: $available.eng(w:2) "
 
 [[block]]
+block = "custom"
+command = "echo CPU $(($(cat /sys/class/thermal/thermal_zone0/temp) / 1000))°C"
+interval = 5
+
+[[block]]
 block = "cpu"
 info_cpu = 20
 warning_cpu = 50
@@ -58,5 +63,4 @@ cmd = "pavucontrol"
 block = "custom"
 command = "~/DotFiles/i3/.config/i3/i3status/battery.sh"
 interval = 10
-
 
