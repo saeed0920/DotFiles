@@ -27,7 +27,7 @@ interval = "once"
 [[block]]
 block = "custom"
 command = 'ip -4 addr show | grep wlp | grep -oP "(?<=inet\s)\d+(\.\d+){3}"'
-interval = "once"
+interval = 30 
 
 [[block]]
 block = "disk_space"
