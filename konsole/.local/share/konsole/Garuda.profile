@@ -1,6 +1,6 @@
 [Appearance]
 ColorScheme=MoeDark
-Font='Vazirmatn RD' FiraCode Nerd Font Mono,18,-1,5,50,0,0,0,0,0
+Font="Vazirmatn"
 UseFontLineChararacters=true
 
 [Cursor Options]
