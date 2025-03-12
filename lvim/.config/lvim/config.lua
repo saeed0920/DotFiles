@@ -45,6 +45,7 @@ lvim.builtin.treesitter.ensure_installed = {
   "toml",
   "typescript",
   "yaml",
+  "astro",
 }
 
 -- ***********
