@@ -27,8 +27,8 @@ i3lock \
 --keyhl-color=$WRONG         \
 --bshl-color=$WRONG          \
 \
---screen 1                   \
--i ~/DotFiles/i3/.config/i3/bg.jpg \
+-S 1 \
+-i ~/DotFiles/i3/.config/i3/bgLock.*  -F \
 --blur 5                     \
 --clock                      \
 --indicator                  \
