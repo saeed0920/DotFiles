@@ -282,8 +282,8 @@ exec --no-startup-id kwalletd6
 # Default Workspaces
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/google-chrome-stable'
 #exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/alacritty'
-#exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
-#exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/hiddify'
+exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
+exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/hiddify'
 
 
 #client.focused #000000 #555555 #ffffff #000000
@@ -292,10 +292,9 @@ exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/google-chrome-stable'
 #client.unfocused        #333333 #222222 #888888 #292d2e   #222222
 #client.urgent           #2f343a #900000 #ffffff #900000   #900000
 #client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
-#
 #client.background       #ffffff
 
-client.focused              #bf616a #bf616a #d8dee8 #bf616a #bf616a
+client.focused              #574b90 #574b90 #d8dee8 #574b90 #574b90
 client.focused_inactive     #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.unfocused            #2f343f #2f343f #d8dee8 #2f343f #2f343f
 client.urgent               #2f343f #2f343f #d8dee8 #2f343f #2f343f
