@@ -288,5 +288,19 @@ exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/google-chrome-stable'
 
 #client.focused #000000 #555555 #ffffff #000000
 
+#client.focused_inactive #333333 #5f676a #ffffff #484e50   #5f676a
+#client.unfocused        #333333 #222222 #888888 #292d2e   #222222
+#client.urgent           #2f343a #900000 #ffffff #900000   #900000
+#client.placeholder      #000000 #0c0c0c #ffffff #000000   #0c0c0c
+#
+#client.background       #ffffff
+
+client.focused              #bf616a #bf616a #d8dee8 #bf616a #bf616a
+client.focused_inactive     #2f343f #2f343f #d8dee8 #2f343f #2f343f
+client.unfocused            #2f343f #2f343f #d8dee8 #2f343f #2f343f
+client.urgent               #2f343f #2f343f #d8dee8 #2f343f #2f343f
+client.placeholder          #2f343f #2f343f #d8dee8 #2f343f #2f343f
+client.background           #2f343f
+
 # set layout on default
 workspace_layout default
