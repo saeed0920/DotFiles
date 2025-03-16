@@ -133,3 +133,4 @@ export PYENV_ROOT="$HOME/.pyenv"
 eval "$(pyenv init - zsh)"
 
 alias fixMonitor="xrandr --output HDMI-1 --mode 1920x1080 --rate 60 && xrandr --output eDP-1 --off"
+alias updateMirrors="sudo reflector --latest 200 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist"
