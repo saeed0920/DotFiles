@@ -2,8 +2,8 @@
 
 BLANK='#00000000'
 CLEAR='#ffffff22'
-DEFAULT='#ff00ffcc'
-TEXT='#ee00eeee'
+DEFAULT='#6c5ce7'
+TEXT='#ffffff'
 WRONG='#880000bb'
 VERIFYING='#bb00bbbb'
 
@@ -29,7 +29,6 @@ i3lock \
 \
 -S 1 \
 -i ~/DotFiles/i3/.config/i3/bgLock.*  -F \
---blur 5                     \
 --clock                      \
 --indicator                  \
 --time-str="%H:%M:%S"        \

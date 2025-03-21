@@ -15,7 +15,7 @@ set $mod Mod4
 # is used in the bar {} block below.
 #font pango:monospace 8
 
-set $i3_fonts JetBrainsMono Nerd Font 9 
+set $i3_fonts  JetBrainsMono Nerd Font 9 
 font pango:$i3_fonts
 
 # gaps 
@@ -281,9 +281,9 @@ exec --no-startup-id kwalletd6
 
 # Default Workspaces
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/google-chrome-stable'
-#exec --no-startup-id i3-msg 'workspace 2; exec /usr/bin/alacritty'
-exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
-exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/hiddify'
+exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/obsidian'
+#exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
+#exec --no-startup-id i3-msg 'workspace 5; exec /usr/bin/hiddify'
 
 
 #client.focused #000000 #555555 #ffffff #000000
