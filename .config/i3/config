@@ -228,7 +228,7 @@ bar {
     }
 }
 # new config of statusbar
-#include ~/DotFiles/i3/.config/i3/i3statusCraft/i3status.conf
+#include ~/DotFiles/.config/i3/i3statusCraft/i3status.conf
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
@@ -244,7 +244,7 @@ bar {
 exec_always --no-startup-id greenclip daemon
 bindsym $mod+Ctrl+v exec rofi -modi "clipboard:greenclip print" -show clipboard -run-command '{cmd}'
 # lock screen
-bindsym $mod+Ctrl+l exec bash ~/DotFiles/i3/.config/i3/lock.sh
+bindsym $mod+Ctrl+l exec bash ~/DotFiles/.config/i3/lock.sh
 # auto startapps  
 # exec --no-startup-id /opt/nekoray/nekoray
 # For warning low battery 

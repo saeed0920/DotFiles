@@ -61,6 +61,6 @@ cmd = "pavucontrol"
 
 [[block]]
 block = "custom"
-command = "~/DotFiles/i3/.config/i3/i3status/battery.sh"
+command = "~/DotFiles/.config/i3/i3status/battery.sh"
 interval = 10
 

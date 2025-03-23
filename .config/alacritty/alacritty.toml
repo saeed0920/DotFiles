@@ -58,8 +58,8 @@ import = [
   # "~/.config/alacritty/catppuccin-frappe.toml"
   # "~/.config/alacritty/catppuccin-macchiato.toml"
   "~/DotFiles/.config/alacritty/catppuccin-mocha.toml",
-  "~/DotFiles/alacritty/.config/alacritty/font.toml",
-  "~/DotFiles/alacritty/.config/alacritty/color.toml"
+  "~/DotFiles/.config/alacritty/font.toml",
+  "~/DotFiles/.config/alacritty/color.toml"
 ]
 
 [terminal]

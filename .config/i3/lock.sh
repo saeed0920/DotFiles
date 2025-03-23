@@ -28,7 +28,7 @@ i3lock \
 --bshl-color=$WRONG          \
 \
 -S 1 \
--i ~/DotFiles/i3/.config/i3/bgLock.*  -F \
+-i ~/DotFiles/.config/i3/bgLock.*  -F \
 --clock                      \
 --indicator                  \
 --time-str="%H:%M:%S"        \
