@@ -9,6 +9,7 @@ This is a curated list of essential tools, applications, and configurations to s
 
 ## Essential Tools and Applications
 
+- [MPV] videoPlayer
 - [Fzf](https://github.com/junegunn/fzf) - Command-line fuzzy finder
 - [Zsh](https://ohmyz.sh/) - Powerful shell with Oh My Zsh framework
 - [Alacritty](https://github.com/alacritty/alacritty) - Fast, cross-platform terminal emulator
