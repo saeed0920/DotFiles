@@ -105,7 +105,8 @@ alias ssh='TERM=xterm-256color ssh'
 alias cat='bat -p'
 alias fzf_preview="fzf --preview 'bat --color=always {}' --bind 'ctrl-d:preview:file {}' --bind 'ctrl-f:preview:bat --color=always {}'"
 alias discord="discord --proxy-server=socks5://127.0.0.1:12334"
-
+alias fixMonitor="xrandr --output HDMI-1 --mode 1920x1080 --rate 60 && xrandr --output eDP-1 --off"
+alias updateMirrors="sudo reflector --latest 200 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist"
 
 #PATH=~/.console-ninja/.bin:$PATH
 export NVM_DIR="$HOME/.nvm"
@@ -132,5 +133,3 @@ export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
 
-alias fixMonitor="xrandr --output HDMI-1 --mode 1920x1080 --rate 60 && xrandr --output eDP-1 --off"
-alias updateMirrors="sudo reflector --latest 200 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist"
