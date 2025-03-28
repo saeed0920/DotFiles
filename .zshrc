@@ -70,7 +70,7 @@ ZSH_THEME="archcraft-dwm"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo zsh-autosuggestions zsh-syntax-highlighting history)
+plugins=(git sudo zsh-autosuggestions zsh-syntax-highlighting history fzf)
 
 source $ZSH/oh-my-zsh.sh
 source /usr/share/fzf/key-bindings.zsh
