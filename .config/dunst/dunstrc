@@ -167,7 +167,7 @@ class = Dunst
 mouse_left_click = do_action
 
 # Round corners
-corner_radius = 25
+corner_radius = 10 
 
 [experimental]
 per_monitor_dpi = true
