@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+
+pushd ~/Desktop/project/
+
+dir=$(ls -A | grep $1)
+dirLength=$(echo "$dir" | wc -w)
+counter=0
+echo "$dir"
+
+if [[ dirLength -ge 2 ]];then 
+
+  for item in $dir ;do
+    echo "[${counter}] $item"
+    counter=$((counter+1))
+  done
+  read -p "Choose the direcotry: " indexDir
+  targetDir=$(echo "$dir" | awk "NR==$((indexDir+1))")
+else 
+  targetDir=$dir
+fi
+
+
+pushd $targetDir && lvim .
+
+
+
+
