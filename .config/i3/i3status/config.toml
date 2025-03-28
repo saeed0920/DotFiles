@@ -7,12 +7,13 @@ separator_fg = "#aaaaaa"
 [icons]
 
 [[block]]
-block = "custom"
-command = "xkb-switch"
+block = "keyboard_layout"
+driver = "xkbswitch"
 interval = 1 
 [[block.click]]
 button = "left"
 cmd = "xkb-switch -n"
+
 
 [[block]]
 block = "time"
@@ -60,7 +61,12 @@ button = "left"
 cmd = "pavucontrol"
 
 [[block]]
+block = "backlight"
+device = "intel_backlight"
+
+[[block]]
 block = "custom"
 command = "~/DotFiles/.config/i3/i3status/battery.sh"
 interval = 10
+
 
