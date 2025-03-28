@@ -79,3 +79,7 @@ This is a curated list of essential tools, applications, and configurations to s
   - DWM
   - Awesome
   - Sway
+
+
+## Thanks to
+- [Dusnt script will little change in my dotfiles/use brightnessctl insted off light package](https://gitlab.com/Nmoleo/i3-volume-brightness-indicator)
