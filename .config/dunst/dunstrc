@@ -20,10 +20,10 @@ follow = keyboard
 
 # Geometry
 width = (300,600)
-offset = 15x45 # margin from the top (to allow for Polybar)
+offset = 15x15 # margin from the top (to allow for Polybar)
 
 # Scale factor. It is auto-detected if value is 0.
-scale = 1 
+scale = 0
 
 # Show how many messages are currently hidden (because of geometry).
 indicate_hidden = yes
@@ -35,7 +35,7 @@ shrink = no
 # The transparency of the window.  Range: [0; 100].
 # This option will only work if a compositing window manager is
 # present (e.g. xcompmgr, compiz, etc.).
-transparency = 5
+transparency = 10 
 
 # Draw a line of "separator_height" pixel height between two
 # notifications.
