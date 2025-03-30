@@ -104,7 +104,12 @@ lvim.plugins = {
   { "tpope/vim-repeat" },
   --  { "tpope/vim-surround", keys = { "c", "d", "y" } },
   { "vim-test/vim-test" },
+  { "luckasRanarison/tailwind-tools.nvim" },
+  { "nvim-treesitter/nvim-treesitter" },
+  { "nvim-telescope/telescope.nvim" },
+  { "neovim/nvim-lspconfig" }, 
 }
+
 
 -- ***
 -- LSP
