@@ -1,0 +1,21 @@
+#!/bin/bash
+
+# Monitor clipboard changes using xsel in a loop
+previous_content=""
+
+while true; do
+    current_content=$(xsel -b -o 2>/dev/null)
+    
+    # Only notify if:
+    # 1. Content changed
+    # 2. New content isn't empty
+    # 3. Previous content wasn't empty (avoids notification on first run)
+    if [[ "$current_content" != "$previous_content" ]] && \
+       [[ -n "$current_content" ]] && \
+       [[ -n "$previous_content" ]]; then
+        notify-send "📋 Copied" "$(echo "$current_content" | head -c 50) ..."
+    fi
+    
+    previous_content="$current_content"
+    sleep 0.5  # Check every 0.5 seconds
+done

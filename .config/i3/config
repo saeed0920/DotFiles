@@ -283,6 +283,8 @@ exec --no-startup-id nm-applet
 exec --no-startup-id dunst --startup_notification
 # pasystray https://github.com/christophgysin/pasystray?tab=readme-ov-file
 exec --no-startup-id pasystray
+# Set notfi for clipboard
+exec --no-startup-id ~/DotFiles/.local/bin/clipNotif
 
 
 # Config the brightness
