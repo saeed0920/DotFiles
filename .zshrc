@@ -109,15 +109,8 @@ alias fixMonitor="xrandr --output HDMI-1 --mode 1920x1080 --rate 60 && xrandr --
 alias updateMirrors="sudo reflector --latest 200 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist"
 alias ff="cd ~ && cd \$(find * -type d | fzf)"
 
-
-#PATH=~/.console-ninja/.bin:$PATH
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
 # Add lvim variable
 export PATH="$HOME/.local/bin:$PATH"
-
 . "${HOME}/.deno/env"
 # Nvm
 export NVM_DIR="$HOME/.nvm"
@@ -134,4 +127,11 @@ esac
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - zsh)"
+
+
+#PATH=~/.console-ninja/.bin:$PATH
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
 
