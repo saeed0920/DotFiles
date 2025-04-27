@@ -106,8 +106,17 @@ alias cat='bat -p'
 alias fzf_preview="fzf --preview 'bat --color=always {}' --bind 'ctrl-d:preview:file {}' --bind 'ctrl-f:preview:bat --color=always {}'"
 alias discord="discord --proxy-server=socks5://127.0.0.1:12334"
 alias fixMonitor="xrandr --output HDMI-1 --mode 1920x1080 --rate 60 && xrandr --output eDP-1 --off"
+alias returnMonitor="xrandr --output eDP-1 --auto"
 alias updateMirrors="sudo reflector --latest 200 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist"
 alias ff="cd ~ && cd \$(find * -type d | fzf)"
+
+# alias for git
+alias gits="git status --short"
+alias gita="git add"
+alias gitap="git add --patch"
+alias gitc="git commit"
+alias gitd='git diff --output-indicator-new=" " --output-indicator-old=" "'
+alias gitl="git log --all --graph"
 
 # Add lvim variable
 export PATH="$HOME/.local/bin:$PATH"

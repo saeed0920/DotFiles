@@ -323,3 +323,6 @@ client.background           #2f343f
 
 # set layout on default
 workspace_layout default
+
+# disable capslock 
+exec --no-startup-id setxkbmap -option caps:none
