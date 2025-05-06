@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=Telegram
+Exec=flatpak run org.telegram.desktop
+Icon=org.telegram.desktop
+GenericName=Internet Messenger
+Terminal=false
+Type=Application
+Categories=Network;InstantMessaging;
+StartupWMClass=TelegramDesktop
+

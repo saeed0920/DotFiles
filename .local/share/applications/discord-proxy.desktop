@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=Discord (Proxy)
+StartupWMClass=discord
+GenericName=Internet Messenger
+Exec=/usr/bin/discord --proxy-server=socks5://127.0.0.1:12334
+Icon=discord
+Type=Application
+Categories=Network;InstantMessaging;
+Path=/usr/bin
