@@ -84,7 +84,7 @@ tiling_drag modifier titlebar
 
 # start a terminal
 bindsym $mod+Return exec alacritty 
-bindsym $mod+Shift+Return exec konsole 
+bindsym $mod+Shift+Return exec kitty 
 
 # kill focused window
 bindsym $mod+q kill
@@ -270,7 +270,7 @@ exec_always --no-startup-id libinput-gestures-setup autostart start
 # wallpaper
 exec_always --no-startup-id feh --bg-fill ~/.config/i3/bg.*
 # picom 
-exec_always  picom --no-fading-openclose 
+exec_always picom --config ~/.config/picom/picom.conf
 # keyboard change layout
 exec_always "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:alt_shift_toggle"
 # Auto start Apps(Hiddify)

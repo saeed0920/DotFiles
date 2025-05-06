@@ -4,7 +4,7 @@ cp $1 ./discord.tar.gz
 
 tar xfv ./discord.tar.gz 
 mv Discord discord
-cp -rf ./discord /opt/
+sudo cp -rf ./discord /opt/
 
-rm -rf discord.tar.gz discord Discord
+rm -r discord.tar.gz discord Discord
 

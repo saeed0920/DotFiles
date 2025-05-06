@@ -120,7 +120,6 @@ alias gitl="git log --all --graph"
 
 # Add lvim variable
 export PATH="$HOME/.local/bin:$PATH"
-. "${HOME}/.deno/env"
 # Nvm
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
