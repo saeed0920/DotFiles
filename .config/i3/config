@@ -284,7 +284,7 @@ exec --no-startup-id dunst --startup_notification
 # pasystray https://github.com/christophgysin/pasystray?tab=readme-ov-file
 exec --no-startup-id pasystray
 # Set notfi for clipboard
-exec --no-startup-id ~/DotFiles/.local/bin/clipNotif
+#exec --no-startup-id ~/DotFiles/.local/bin/clipNotif
 
 
 # Config the brightness
@@ -292,8 +292,8 @@ exec --no-startup-id ~/DotFiles/.local/bin/clipNotif
 #bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 # This is for keywall in kde 
-exec --no-startup-id kwalletd5
-exec --no-startup-id kwalletd6
+# exec --no-startup-id kwalletd5
+# exec --no-startup-id kwalletd6
 
 # Default Workspaces
 #exec --no-startup-id i3-msg 'exec wmctrl -s 1 /usr/bin/google-chrome-stable'
@@ -303,7 +303,8 @@ exec --no-startup-id kwalletd6
 #exec --no-startup-id ./autoStart.sh
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/google-chrome-stable'
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/obsidian'
-exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/telegram'
+exec --no-startup-id i3-msg 'workspace 1; exec "flatpak run org.telegram.desktop"'
+exec --no-startup-id i3-msg 'workspace 1; exec "env LD_PRELOAD=/usr/lib/spotify-adblock.so spotify --uri=%U"'
 
 
 #client.focused #000000 #555555 #ffffff #000000
@@ -325,4 +326,6 @@ client.background           #2f343f
 workspace_layout default
 
 # disable capslock 
-exec --no-startup-id setxkbmap -option caps:none
+exec_always --no-startup-id setxkbmap -option caps:none
+
+
