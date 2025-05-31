@@ -107,7 +107,7 @@ alias fzf_preview="fzf --preview 'bat --color=always {}' --bind 'ctrl-d:preview:
 alias discord="discord --proxy-server=socks5://127.0.0.1:12334"
 alias fixMonitor="xrandr --output HDMI-1 --mode 1920x1080 --rate 60 && xrandr --output eDP-1 --off"
 alias returnMonitor="xrandr --output eDP-1 --auto"
-alias updateMirrors="sudo reflector --latest 200 --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist"
+alias updateMirrors="sudo reflector --latest 5 --country France,Germany --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist"
 alias ff="cd ~ && cd \$(find * -type d | fzf)"
 
 # alias for git
@@ -142,4 +142,22 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
+
+
+# bun completions
+[ -s "/home/saeed0920/.bun/_bun" ] && source "/home/saeed0920/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# yazi
+eval "$(zoxide init zsh)"
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	IFS= read -r -d '' cwd < "$tmp"
+	[ -n "$cwd" ] && [ "$cwd" != "$PWD" ] && builtin cd -- "$cwd"
+	rm -f -- "$tmp"
+}
 
