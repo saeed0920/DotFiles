@@ -1,0 +1,23 @@
+#!/bin/bash
+set -e 
+
+# Detect connected displays
+main_display=$(xrandr | grep " connected primary" | cut -d" " -f1)
+[[ -z "$main_display" ]] && main_display=$(xrandr | grep " connected" | head -n1 | cut -d" " -f1)
+
+second_display=$(xrandr | grep " connected" | grep -v "$main_display" | cut -d" " -f1)
+
+# Get main screen resolution
+resolution=$(xrandr | grep -A1 "^$main_display" | tail -n1 | awk '{print $1}')
+echo $main_display
+echo $second_display
+echo $resolutaion
+
+
+# Mirror the second display
+if [ -n "$second_display" ]; then
+  xrandr --output "$second_display" --mode "$resolution" --same-as "$main_display"
+else
+  notify-send "No second display found to mirror"
+fi
+
