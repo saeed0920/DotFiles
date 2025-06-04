@@ -13,3 +13,4 @@ PATH=~/.console-ninja/.bin:$PATH
 alias ssh="term=xterm-256color $(which ssh)"
 . "${HOME}/.deno/env"
 . "$HOME/.cargo/env"
+

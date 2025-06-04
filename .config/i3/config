@@ -272,6 +272,7 @@ exec_always --no-startup-id feh --bg-fill ~/.config/i3/bg.*
 # picom 
 exec_always picom --config ~/.config/picom/picom.conf
 # keyboard change layout
+exec --no-startup-id setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:alt_shift_toggle
 exec_always "setxkbmap -model pc104 -layout us,ir -variant ,, -option grp:alt_shift_toggle"
 # Auto start Apps(Hiddify)
 # exec --no-startup-id hiddify
@@ -292,8 +293,8 @@ exec --no-startup-id pasystray
 #bindsym XF86MonBrightnessDown exec --no-startup-id brightnessctl set 5%-
 
 # This is for keywall in kde 
-# exec --no-startup-id kwalletd5
-# exec --no-startup-id kwalletd6
+exec --no-startup-id kwalletd5
+exec --no-startup-id kwalletd6
 
 # Default Workspaces
 #exec --no-startup-id i3-msg 'exec wmctrl -s 1 /usr/bin/google-chrome-stable'
@@ -301,7 +302,7 @@ exec --no-startup-id pasystray
 #exec --no-startup-id i3-msg 'workspace 3; exec /usr/bin/telegram-desktop'
 #exec --no-startup-id i3-msg 'exec /usr/bin/hiddify'
 #exec --no-startup-id ./autoStart.sh
-exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/google-chrome-stable'
+exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/google-chrome-stable --password-store=kwallet5'
 exec --no-startup-id i3-msg 'workspace 1; exec /usr/bin/obsidian'
 exec --no-startup-id i3-msg 'workspace 1; exec "flatpak run org.telegram.desktop"'
 exec --no-startup-id i3-msg 'workspace 1; exec "env LD_PRELOAD=/usr/lib/spotify-adblock.so spotify --uri=%U"'
@@ -327,5 +328,4 @@ workspace_layout default
 
 # disable capslock 
 exec_always --no-startup-id setxkbmap -option caps:none
-
-
+exec_always --no-startup-id sh -c "sleep 1 && setxkbmap -option caps:none"

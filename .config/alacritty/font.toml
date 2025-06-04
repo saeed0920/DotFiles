@@ -11,19 +11,19 @@ builtin_box_drawing = true
 
 ## Normal font family.
 [font.normal]
-family = "JetBrainsMono Nerd Font"
+family = "MonoLisa"
 
 ## If the family is not specified, it will fall back to the value specified for the normal font.
 [font.bold]
-family = "JetBrainsMono Nerd Font"
+family = "MonoLisa"
 
 ## If the family is not specified, it will fall back to the value specified for the normal font.
 [font.italic]
-family = "JetBrainsMono Nerd Font"
+family = "MonoLisa"
 
 ## If the family is not specified, it will fall back to the value specified for the normal font.
 [font.bold_italic]
-family = "JetBrainsMono Nerd Font"
+family = "MonoLisa"
 
 ## Offset is the extra space around each character.
 ## 'y' can be thought of as modifying the line spacing, and 'x' as modifying the letter spacing.
