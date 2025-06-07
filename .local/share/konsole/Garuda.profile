@@ -1,10 +1,11 @@
 [Appearance]
-ColorScheme=MoeDark
-Font="Vazirmatn"
+ColorScheme=Mokka
+Font=MonoLisa,9,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,MonoLisa
+TabColor=128,255,255
 UseFontLineChararacters=true
 
 [Cursor Options]
-CursorShape=2
+CursorShape=0
 CustomCursorColor=255,0,0
 UseCustomCursorColor=true
 

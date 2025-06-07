@@ -1,6 +1,7 @@
 #!/bin/bash
 set -e 
 
+pkill picom || echo "picom was kill"
 # Detect connected displays
 main_display=$(xrandr | grep " connected primary" | cut -d" " -f1)
 [[ -z "$main_display" ]] && main_display=$(xrandr | grep " connected" | head -n1 | cut -d" " -f1)
