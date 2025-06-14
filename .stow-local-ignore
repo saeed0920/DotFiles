@@ -7,3 +7,4 @@ i3-volume-dunst
 ./i3-volume-dunst
 .oh-my-zsh/plugins
 .oh-my-zsh/themes
+.gitignore
