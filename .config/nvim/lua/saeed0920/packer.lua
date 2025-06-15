@@ -37,5 +37,16 @@ use {
 	}
 }
 
+use {"akinsho/toggleterm.nvim", tag = '*', config = function()
+    require("toggleterm").setup()
+end}
+use({
+    "kdheepak/lazygit.nvim",
+    -- optional for floating window border decoration
+    requires = {
+        "nvim-lua/plenary.nvim",
+    },
+})
+
 
 end)
