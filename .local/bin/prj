@@ -22,5 +22,5 @@ else
   targetDir=$dir
 fi
 
-pushd $targetDir > /dev/null && lvim .
+pushd $targetDir > /dev/null && nvim .
 
