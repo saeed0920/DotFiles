@@ -104,7 +104,7 @@ source /usr/share/fzf/completion.zsh
 alias ssh='TERM=xterm-256color ssh'
 alias cat='bat -p'
 alias fzf_preview="fzf --preview 'bat --color=always {}' --bind 'ctrl-d:preview:file {}' --bind 'ctrl-f:preview:bat --color=always {}'"
-alias discord="discord --proxy-server=socks5://127.0.0.1:12334"
+alias discord="discord --proxy-server=socks5://192.168.88.228:10808"
 alias fixMonitor="xrandr --output HDMI-1 --mode 1920x1080 --rate 60 && xrandr --output eDP-1 --off"
 alias returnMonitor="xrandr --output eDP-1 --auto"
 alias updateMirrors="sudo reflector --latest 5 --country France,Germany --protocol http,https --sort rate --save /etc/pacman.d/mirrorlist"

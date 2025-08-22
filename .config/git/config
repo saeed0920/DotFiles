@@ -55,7 +55,8 @@
 	graphColors = blue,yellow,cyan,magenta,green,red
 
 [branch]
-	sort = -committeradate
+	sort = -committerdate
+
 
 # Third-party: diff-so-fancy
 [diff-so-fancy]
