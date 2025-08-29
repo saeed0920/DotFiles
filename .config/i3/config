@@ -225,21 +225,21 @@ bindsym $mod+r mode "resize"
 # old config about rust statsubar
 bar {
     #font pango:DejaVu Sans Mono, FontAwesome 9
-	  font pango:JetBrainsMono Nerd Font 9 
+	font pango:JetBrainsMono Nerd Font Mono ,FontAwesome 11 
     mode hide
     hidden_state hide
     modifier $mod
     position bottom
     status_command i3status-rs ~/.config/i3/i3status/config.toml
     colors {
-        background #34495e8C 
-        separator #666666
-        statusline #dddddd
-        focused_workspace #0088CC #0088CC #ffffff
-        active_workspace #333333 #333333 #ffffff
-        inactive_workspace #333333 #333333 #888888
-        urgent_workspace #2f343a #900000 #ffffff
-    }
+        background #1e1b16      
+        separator  #7a5c5c     
+        statusline #f5e6d3    
+        focused_workspace  #c8a97e #c8a97e #1e1b16
+        active_workspace   #a67b5b #a67b5b #ffffff
+        inactive_workspace #2b2520 #2b2520 #b8a58a
+        urgent_workspace   #3b1a0a #b23a48 #ffffff
+}
 }
 # new config of statusbar
 #include ~/DotFiles/.config/i3/i3statusCraft/i3status.conf
